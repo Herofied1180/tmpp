@@ -1,2 +1,2 @@
-web: node ./web/web.js
-WebSocket: node ws.js
+web: node src/web
+WebSocket: node ws
