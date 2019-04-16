@@ -1,0 +1,20 @@
+{
+	"port": 80,
+	"ip": "127.0.0.1",
+	"index": "/app/TMPP/src/web",
+	"html": "/app/TMPP/src/web/index.html",
+	"websocket": {
+		"port": 3000,
+		"ip": "127.0.0.1"
+	},
+	"rooms": {
+		"lobby": {
+			"color": "#3b5054"
+		}
+	},
+	"secret": {
+		"msg": "Stop Code:\n16:d:>g;jAB>=>DFAJwvKHw{J{O|TVX\nHelp:\nClient.js",
+		"url": "stopcode",
+		"found": false
+	}
+}
