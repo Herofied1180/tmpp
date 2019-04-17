@@ -6,3 +6,6 @@ app.use('/web', express.static(__dirname+'/web'));
 app.get('/web/favicon.ico', (req, res) => {
 	res.send(express.static(__dirname+'/web/favicon.ico'));
 });
+app.get('/web/index.html', (req, res) => {
+	res.send(express.static(__dirname+'/web/index.html')+`<div id="port">${process.env.PORT}</div>`);
+});
