@@ -1,4 +1,4 @@
-const ServerReq = require('./structures/Server.js'/*'./serverold.js'*/);
+const ServerReq = require('./src/structures/Server.js'/*'./serverold.js'*/);
 const fs = require('fs');
 const Server = new ServerReq();
 
