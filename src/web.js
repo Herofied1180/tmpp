@@ -7,5 +7,5 @@ app.get('/web/favicon.ico', (req, res) => {
 	res.send(express.static(__dirname+'/web/favicon.ico'));
 });
 app.get('/web/index.html', (req, res) => {
-	res.send(express.static(__dirname+'/web/index.html')+`<div id="port">${process.env.PORT}</div>`);
+	res.send(`<div id="port">${process.env.PORT}</div>`);
 });
