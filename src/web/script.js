@@ -1355,7 +1355,7 @@ Rect.prototype.contains = function(x, y) {
 ////////////////////////////////////////////////////////////////
 
 	var channel_id = decodeURIComponent(window.location.hash.substr(1)) || "lobby";
-	var gClient = new Client("wss://tmpp-server.herokuapp.com:443");
+	var gClient = new Client(`wss://tmpp-server.herokuapp.com:${MPP.port}`);
 	gClient.setChannel(channel_id);
 	gClient.start();
 
@@ -2929,7 +2929,8 @@ Rect.prototype.contains = function(x, y) {
 		client: gClient,
 		chat: chat,
 		noteQuota: gNoteQuota,
-		soundSelector: gSoundSelector
+		soundSelector: gSoundSelector,
+		port: document.getElementById('port').innerHTML
 	};
 
 	// record mp3
