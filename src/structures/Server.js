@@ -28,7 +28,7 @@ const commands = {
 
 class Server extends WebSocket.Server {
   constructor() {
-    super({ port: Config.websocket.port });
+    super({ port: 3000 });
     this.cli = new CLI(this);
     console.log('Server Launched');
     this.sockets = new Set();
