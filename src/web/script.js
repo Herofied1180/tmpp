@@ -1368,9 +1368,9 @@ Rect.prototype.contains = function(x, y) {
 		gClient.on("count", function(count) {
 			if(count > 0) {
 				$("#status").html('<span class="number">'+count+'</span> '+(count==1? 'person is' : 'people are')+' playing');
-				document.title = "Piano (" + count + ")";
+				document.title = "TehPiano™ (" + count + ")";
 			} else {
-				document.title = "Multiplayer Piano";
+				document.title = "Tehc's MPP";
 			}
 		});
 	})();
